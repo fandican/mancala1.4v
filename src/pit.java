@@ -3,18 +3,26 @@
  */
 public class pit {
 
-    private int stones;
+    private int stoneCnt;
 
-    public pit() {
-        stones =0;
+    public pit(int stones) {
+        this.stoneCnt =stones;
     }
 
-    public void setStones(int stones) {
-        this.stones = stones;
+    public void addStone() {
+        this.stoneCnt++;
+    }
+
+    public int removeStone() {
+        if(this.stoneCnt>=1) {
+            return this.stoneCnt--;
+        }else{
+            return 0;
+        }
     }
 
     public int getStones() {
-        return stones;
+        return this.stoneCnt;
     }
 
 }

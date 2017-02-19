@@ -3,26 +3,22 @@
  */
 public class player {
     private String name;
-    private String turn;
+    private Boolean turn;
 
-    public player() {
-        name=null;
-        turn=null;
+    public player(String name,Boolean turn) {
+        this.name = name;
+        this.turn=turn;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getTurn() {
+    public Boolean isItMyTurn() {
         return turn;
     }
 
-    public void setTurn(String turn) {
+    public void setTurn(Boolean turn) {
         this.turn = turn;
     }
 
