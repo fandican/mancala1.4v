@@ -1,5 +1,5 @@
 /**
- * Created by FA.
+ * Created by FA Kalah.
  */
 public class kalah {
     private int stones;
