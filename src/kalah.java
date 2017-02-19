@@ -1,5 +1,5 @@
 /**
- * Created by FA on 2/19/2017.
+ * Created by FA.
  */
 public class kalah {
     private int stones;
