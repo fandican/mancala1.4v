@@ -1,19 +1,9 @@
 /**
  * Created by FA Kalah.
  */
-public class kalah {
-    private int stones;
+public class kalah extends pit{
 
-    public kalah() {
-        stones=0;
+    public kalah(int stones) {
+        super(stones);
     }
-
-    public int getStones() {
-        return stones;
-    }
-
-    public void setStones(int stones) {
-        this.stones = stones;
-    }
-
 }

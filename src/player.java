@@ -14,12 +14,11 @@ public class player {
         return name;
     }
 
-    public Boolean isItMyTurn() {
+    public Boolean getTurn() {
         return turn;
     }
 
     public void setTurn(Boolean turn) {
         this.turn = turn;
     }
-
 }

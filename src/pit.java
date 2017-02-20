@@ -4,25 +4,43 @@
 public class pit {
 
     private int stoneCnt;
+    public pit next;
+    public pit opposite;
 
-    public pit(int stones) {
-        this.stoneCnt =stones;
+    public pit(int stoneCnt) {
+        this.stoneCnt = stoneCnt;
     }
 
-    public void addStone() {
-        this.stoneCnt++;
+    public pit(int stoneCnt, pit next) {
+        this.stoneCnt = stoneCnt;
+        this.next = next;
     }
 
-    public int removeStone() {
-        if(this.stoneCnt>=1) {
-            return this.stoneCnt--;
-        }else{
-            return 0;
-        }
+    public int getStoneCnt() {
+        return stoneCnt;
     }
 
-    public int getStones() {
-        return this.stoneCnt;
+    public pit getNext() {
+        return next;
     }
 
+    public pit getOpposite() {
+        return opposite;
+    }
+
+    public void setStoneCnt(int stoneCnt) {
+        this.stoneCnt = stoneCnt;
+    }
+
+    public void setNext(pit next) {
+        this.next = next;
+    }
+
+    public void setOpposite(pit opposite) {
+        this.opposite = opposite;
+    }
+
+    public void addStones(int stones){
+        this.stoneCnt += stones;
+    }
 }
