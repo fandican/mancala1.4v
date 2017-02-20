@@ -31,6 +31,18 @@ public class player {
         gain.addStones(end.opposite.takeAllStones());
         return end;
     }
-
-    
+      
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
