@@ -43,4 +43,14 @@ public class pit {
     public void addStones(int stones){
         this.stoneCnt += stones;
     }
+
+    /*
+    * empties the stone count in a pit,
+    * and returns the number of stones,
+    * that were previously in the pit*/
+    public int takeAllStones(){
+        int temp = getStoneCnt();
+        setStoneCnt(0);
+        return temp;
+    }
 }

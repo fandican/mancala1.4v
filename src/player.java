@@ -21,4 +21,16 @@ public class player {
     public void setTurn(Boolean turn) {
         this.turn = turn;
     }
+
+    /*
+    * This method takes a pit(end) and a kalah(gain) as input,
+    * Then it will move all the pebbles from the pit opposite to
+    * the given pit(end) and put them in the given kalah.
+    * It will finally return the current pit(end)*/
+    public pit takeOppositePebbles(pit end, kalah gain){
+        gain.addStones(end.opposite.takeAllStones());
+        return end;
+    }
+
+    
 }
